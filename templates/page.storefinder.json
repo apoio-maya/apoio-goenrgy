@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-page",
@@ -73,11 +73,23 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "ee6fbea0-8b9d-48bf-bef4-61103deeaa9d": {
+      "type": "storefinder",
+      "settings": {
+        "producttitle1": "",
+        "productdesc1": "",
+        "producttitle2": "",
+        "productdesc2": "",
+        "producttitle3": "",
+        "productdesc3": ""
+      }
     }
   },
   "order": [
     "main",
     "d7678808-7429-44fb-ba5e-b1ee56c9c8e3",
-    "579ba4c8-bfab-48a9-8fc0-6f5b2154cd63"
+    "579ba4c8-bfab-48a9-8fc0-6f5b2154cd63",
+    "ee6fbea0-8b9d-48bf-bef4-61103deeaa9d"
   ]
 }

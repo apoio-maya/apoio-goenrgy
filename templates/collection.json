@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main-collection-banner": {
       "type": "main-collection-banner",
@@ -26,6 +26,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,

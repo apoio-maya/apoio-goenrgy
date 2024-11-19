@@ -1,0 +1,497 @@
+<section id="storeFinder">
+  <div class="page-width" style="position: relative;">
+    <div id="panel"></div>
+    <div id="map"></div>
+  </div>
+</section>
+
+<div id="storeStorage" style="display: none">{{ 'stores.json' | asset_url }}</div>
+<script>
+  let map;
+
+  const mapStyleOld = [
+    {
+      featureType: 'administrative',
+      elementType: 'all',
+      stylers: [
+        {
+          visibility: 'on',
+        },
+        {
+          lightness: 23,
+        },
+      ],
+    },
+    {
+      featureType: 'landscape',
+      elementType: 'all',
+      stylers: [
+        {
+          color: '#f2e5d4',
+        },
+      ],
+    },
+    {
+      featureType: 'poi.park',
+      elementType: 'geometry',
+      stylers: [
+        {
+          color: '#c5dac6',
+        },
+      ],
+    },
+    {
+      featureType: 'poi.park',
+      elementType: 'labels',
+      stylers: [
+        {
+          visibility: 'on',
+        },
+        {
+          lightness: 20,
+        },
+      ],
+    },
+    {
+      featureType: 'road',
+      elementType: 'all',
+      stylers: [
+        {
+          lightness: 20,
+        },
+      ],
+    },
+    {
+      featureType: 'road.highway',
+      elementType: 'geometry',
+      stylers: [
+        {
+          color: '#c5c6c6',
+        },
+      ],
+    },
+    {
+      featureType: 'road.arterial',
+      elementType: 'geometry',
+      stylers: [
+        {
+          color: '#e4d7c6',
+        },
+      ],
+    },
+    {
+      featureType: 'road.local',
+      elementType: 'geometry',
+      stylers: [
+        {
+          color: '#fbfaf7',
+        },
+      ],
+    },
+    {
+      featureType: 'water',
+      elementType: 'all',
+      stylers: [
+        {
+          visibility: 'on',
+        },
+        {
+          color: '#acbcc9',
+        },
+      ],
+    },
+  ];
+
+  const mapStyle = [
+    {
+      featureType: 'landscape',
+      stylers: [
+        {
+          hue: '#FFBB00',
+        },
+        {
+          saturation: 43.400000000000006,
+        },
+        {
+          lightness: 37.599999999999994,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+    {
+      featureType: 'road.highway',
+      stylers: [
+        {
+          hue: '#FFC200',
+        },
+        {
+          saturation: -61.8,
+        },
+        {
+          lightness: 45.599999999999994,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+    {
+      featureType: 'road.arterial',
+      stylers: [
+        {
+          hue: '#FF0300',
+        },
+        {
+          saturation: -100,
+        },
+        {
+          lightness: 51.19999999999999,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+    {
+      featureType: 'road.local',
+      stylers: [
+        {
+          hue: '#FF0300',
+        },
+        {
+          saturation: -100,
+        },
+        {
+          lightness: 52,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+    {
+      featureType: 'water',
+      stylers: [
+        {
+          hue: '#0078FF',
+        },
+        {
+          saturation: -13.200000000000003,
+        },
+        {
+          lightness: 2.4000000000000057,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+    {
+      featureType: 'poi',
+      stylers: [
+        {
+          hue: '#00FF6A',
+        },
+        {
+          saturation: -1.0989010989011234,
+        },
+        {
+          lightness: 11.200000000000017,
+        },
+        {
+          gamma: 1,
+        },
+      ],
+    },
+  ];
+
+  function initMap() {
+    // Create the map.
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: { lat: 51.981568, lng: 10.256174 },
+      styles: mapStyle,
+      disableDefaultUI: true,
+      zoomControl: true,
+    });
+
+    // Load the stores GeoJSON onto the map.
+    jsonToLoad = $('#storeStorage').text();
+    map.data.loadGeoJson(jsonToLoad, { idPropertyName: 'storeid' });
+
+    // Define the custom marker icons, using the store's "category".
+    map.data.setStyle((feature) => {
+      return {
+        icon: {
+          url: `https://cdn.shopify.com/s/files/1/0651/4271/8696/files/supermarket_aa9e69b6-c772-47df-a5c9-adb21892a7e8.png?v=1681730686`,
+          scaledSize: new google.maps.Size(45, 45),
+        },
+      };
+    });
+
+    const apiKey = 'AIzaSyDdHFpgXSRwUPx4FmU7TjZm1Kxr3Z0f1Gs';
+    const infoWindow = new google.maps.InfoWindow();
+
+    // Show the information for a store when its marker is clicked.
+    map.data.addListener('click', (event) => {
+      const category = event.feature.getProperty('category');
+      const name = event.feature.getProperty('name');
+      const description = event.feature.getProperty('description');
+      const hours = event.feature.getProperty('hours');
+      const phone = event.feature.getProperty('phone');
+      const position = event.feature.getGeometry().get();
+      const content = `
+      <div style="margin-bottom:20px;">
+      <div class="mapHeader"><h2>${name}</h2></div>
+      <div class="mapContent">
+        <p>${description}</p>
+      </div>
+      </div>
+      `;
+
+      infoWindow.setContent(content);
+      infoWindow.setPosition(position);
+      infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+      infoWindow.open(map);
+    });
+
+    // Build and add the search bar
+    const card = document.createElement('div');
+    const titleBar = document.createElement('div');
+    const title = document.createElement('div');
+    const container = document.createElement('div');
+    const input = document.createElement('input');
+    const options = {
+      types: ['address'],
+      componentRestrictions: { country: 'de' },
+    };
+
+    card.setAttribute('id', 'pac-card');
+    title.setAttribute('id', 'title');
+
+    title.textContent = 'Finde Stores in deiner Nähe!';
+    titleBar.appendChild(title);
+    container.setAttribute('id', 'pac-container');
+    input.setAttribute('id', 'pac-input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('placeholder', 'Gib deine Adresse ein');
+    container.appendChild(input);
+    var DOM_img = document.createElement('img');
+    DOM_img.src =
+      'https://cdn.shopify.com/s/files/1/0651/4271/8696/files/supermarket_aa9e69b6-c772-47df-a5c9-adb21892a7e8.png?v=1681730686';
+    title.appendChild(DOM_img);
+
+    card.appendChild(titleBar);
+    card.appendChild(container);
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+
+    // Make the search bar into a Places Autocomplete search bar and select
+    // which detail fields should be returned about the place that
+    // the user selects from the suggestions.
+    const autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    autocomplete.setFields(['address_components', 'geometry', 'name']);
+
+    // Set the origin point when the user selects an address
+    const originMarker = new google.maps.Marker({ map: map });
+    originMarker.setVisible(false);
+    let originLocation = map.getCenter();
+
+    autocomplete.addListener('place_changed', async () => {
+      originMarker.setVisible(false);
+      originLocation = map.getCenter();
+      const place = autocomplete.getPlace();
+
+      if (!place.geometry) {
+        // User entered the name of a Place that was not suggested and
+        // pressed the Enter key, or the Place Details request failed.
+        window.alert("Keine Adresse für Eingabe gefunden: '" + place.name + "'");
+        return;
+      }
+
+      // Recenter the map to the selected address
+      originLocation = place.geometry.location;
+      map.setCenter(originLocation);
+      map.setZoom(11);
+
+      originMarker.setPosition(originLocation);
+      originMarker.setVisible(true);
+
+      // Use the selected address as the origin to calculate distances
+      // to each of the store locations
+      const rankedStores = await calculateDistances(map.data, originLocation);
+      showStoresList(map.data, rankedStores);
+
+      return;
+    });
+  }
+
+  async function calculateDistances(data, origin) {
+    const stores = [];
+    const destinations = [];
+
+    // Build parallel arrays for the store IDs and destinations
+    data.forEach((store) => {
+      const storeNum = store.getProperty('storeid');
+      const storeLoc = store.getGeometry().get();
+
+      stores.push(storeNum);
+      destinations.push(storeLoc);
+    });
+
+    // Retrieve the distances of each store from the origin
+    // The returned list will be in the same order as the destinations list
+    const service = new google.maps.DistanceMatrixService();
+    const getDistanceMatrix = (service, parameters) =>
+      new Promise((resolve, reject) => {
+        service.getDistanceMatrix(parameters, (response, status) => {
+          if (status != google.maps.DistanceMatrixStatus.OK) {
+            reject(response);
+          } else {
+            const distances = [];
+            const results = response.rows[0].elements;
+            for (let j = 0; j < results.length; j++) {
+              const element = results[j];
+              const distanceText = element.distance.text;
+              const distanceVal = element.distance.value;
+              const distanceObject = {
+                storeid: stores[j],
+                distanceText: distanceText,
+                distanceVal: distanceVal,
+              };
+              distances.push(distanceObject);
+            }
+
+            resolve(distances);
+          }
+        });
+      });
+
+    const distancesList = await getDistanceMatrix(service, {
+      origins: [origin],
+      destinations: destinations,
+      travelMode: 'DRIVING',
+      unitSystem: google.maps.UnitSystem.METRIC,
+    });
+
+    distancesList.sort((first, second) => {
+      return first.distanceVal - second.distanceVal;
+    });
+
+    return distancesList;
+  }
+
+  function showStoresList(data, stores) {
+    if (stores.length == 0) {
+      console.log('empty stores');
+      return;
+    }
+
+    let panel = document.createElement('div');
+    // If the panel already exists, use it. Else, create it and add to the page.
+    if (document.getElementById('panel')) {
+      panel = document.getElementById('panel');
+      // If panel is already open, close it
+      if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+      }
+    } else {
+      panel.setAttribute('id', 'panel');
+      const body = document.body;
+      body.insertBefore(panel, body.childNodes[0]);
+    }
+
+    // Clear the previous details
+    while (panel.lastChild) {
+      panel.removeChild(panel.lastChild);
+    }
+
+    stores.forEach((store) => {
+      // Add store details with text formatting
+      const name = document.createElement('p');
+      name.classList.add('place');
+      const currentStore = data.getFeatureById(store.storeid);
+      name.textContent = currentStore.getProperty('name');
+      panel.appendChild(name);
+      const distanceText = document.createElement('p');
+      distanceText.classList.add('distanceText');
+      distanceText.textContent = store.distanceText;
+      panel.appendChild(distanceText);
+    });
+
+    // Open the panel
+    panel.classList.add('open');
+
+    return;
+  }
+</script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdHFpgXSRwUPx4FmU7TjZm1Kxr3Z0f1Gs&libraries=places&callback=initMap&solution_channel=GMP_codelabs_simplestorelocator_v1_a"
+  defer
+></script>
+
+{% schema %}
+{
+  "name": "Store Finder Map",
+  "settings": [
+    {
+      "id": "producttitle1",
+      "type": "text",
+      "label": "Produkttitel Produkt 1"
+    },
+    {
+      "id": "productimg1",
+      "type": "image_picker",
+      "label": "Produktbild Produkt 1"
+    },
+    {
+      "id": "productdesc1",
+      "type": "textarea",
+      "label": "Produktbeschreibung Produkt 1"
+    },
+    {
+      "id": "producttitle2",
+      "type": "text",
+      "label": "Produkttitel Produkt 2"
+    },
+    {
+      "id": "productimg2",
+      "type": "image_picker",
+      "label": "Produktbild Produkt 2"
+    },
+    {
+      "id": "productdesc2",
+      "type": "textarea",
+      "label": "Produktbeschreibung Produkt 2"
+    },
+    {
+      "id": "producttitle3",
+      "type": "text",
+      "label": "Produkttitel Produkt 3"
+    },
+    {
+      "id": "productimg3",
+      "type": "image_picker",
+      "label": "Produktbild Produkt 3"
+    },
+    {
+      "id": "productdesc3",
+      "type": "textarea",
+      "label": "Produktbeschreibung Produkt 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Finder Map",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

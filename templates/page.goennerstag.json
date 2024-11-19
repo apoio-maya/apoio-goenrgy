@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "dc6a9ab4-abbd-4e32-bf76-63a9d209c45e": {
       "type": "video",
@@ -52,7 +52,7 @@
         "template--18554303611208__c3df8059-6bcd-4dad-bb45-f122bdad0a99-168147315780f30be1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Gönrgys möchte als Inspiration für andere Menschen dienen, ihre eigene Großzügigkeit und Freundlichkeit mit anderen zu teilen. </p><p>Unser Ziel ist es, durch unsere Haltung des Gönnens einen positiven Einfluss auf das Leben anderer zu haben und Situationen zu schaffen, in der Großzügigkeit und spannende gemeinsame Erlebnisse selbstverständlich sind. </p><h5>Hier findet ihr unsere Gönnerstags Erlebnise für euch und eure Freunde ...</h5>"
+            "text": "<p>Gönrgy möchte als Inspiration für andere Menschen dienen, ihre eigene Großzügigkeit und Freundlichkeit mit anderen zu teilen. </p><p>Unser Ziel ist es, durch unsere Haltung des Gönnens einen positiven Einfluss auf das Leben anderer zu haben und Situationen zu schaffen, in der Großzügigkeit und spannende gemeinsame Erlebnisse selbstverständlich sind. </p><h5>Hier findet ihr unsere Gönnerstags Erlebnisse für euch und eure Freunde ...</h5>"
           }
         }
       },
@@ -69,11 +69,231 @@
         "padding_top": 0,
         "padding_bottom": 52
       }
+    },
+    "b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2": {
+      "type": "goennerstag-slideshow",
+      "blocks": {
+        "template--18554303611208__b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2-1681478332421b5a31-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Feedpost_1920x1080_Lines.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--18554303611208__b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2-1681478332421b5a31-0": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/goenrgy-heidepark.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18554303611208__b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2-1681478332421b5a31-1",
+        "template--18554303611208__b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2-1681478332421b5a31-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "infobox_heading": "Das Gewinnspiel ist Beendet!",
+        "infobox_paragraph": "Moinmoin ihr Schlingel,\nHeute habe ich noch 2 besonders heiße Info für Euch:\nIch bin am 24.08. mit GÖNRGY in der  Gaemscom Halle 1 und mache 2 geile Shows für Euch!\n10:30 bzw. 16:00 ist Einlass und es gibt Gönrgy für alle (ab 16 Jahre)!\n\nWir verlosen 10 x persönliches Treffen mit Marcel im Backstage Bereich der Gamenescom und 100 Tagestickets für die Gamescom! \n\nBitte checkt die Details auf Instagram!",
+        "infobox_hashtag": "BENUTZE DEN HASHTAG #gönnerstaggamescom",
+        "showGoennerButton": true,
+        "popup_heading1": "1. Jetzt wird gegönnt!",
+        "popup_image": "shopify://shop_images/Feedpost_1080x1080_Pixel.png",
+        "popup_text1": "Um teilzunehmen, müsst ihr uns einfach eine DM schreiben wenn Ihr Zeit und Lust habt dabei zu sein!\n\nACHTUNG: nur @goenrgy_official (der mit dem blauen Haken) kontaktiert die Gewinner, alles andere sind Fakes!",
+        "popup_heading2": "2. Nutze den #gönnerstaggamescom",
+        "popup_text2": "Die Daumen sind gedrückt!",
+        "popup_heading3": "3. GLÜCKWUNSCH: DEIN LOS IST IM POTT!",
+        "popup_text3": "So einfach geht's: Nun bist du mit etwas Glück Gewinner/in der nächsten Gönnerstag-Aktion. Auf dem offiziellen Instagram-Profil @goenrgy_official erfährst du, ob du unter den Gewinnern bist.",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "ca3557a0-298c-4e2d-b39e-ef4b13b41db9": {
+      "type": "goennerstag-calendar",
+      "blocks": {
+        "8417794d-c1a0-47ef-bdf8-6d9d4c4368c5": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "aktion-titel": "Limited Edition #2 Mega Jackpot! Erlebe den ultimativen Energy-Kick!Wir verlosen 10 x 10.000.-€",
+            "aktion-bild": "shopify://shop_images/Bildschirmfoto_2024-06-23_um_11.11.49_52e7a561-330a-43d9-9388-c488892d04f9.png",
+            "aktion-datum": "24.05.2023",
+            "aktion-aktiv": true
+          }
+        },
+        "30f53369-4d16-4947-9668-05b7b367945c": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Der Twitch Summer Stream auf dem Myle Mobility Festival in München.",
+            "aktion-bild": "shopify://shop_images/summer.png",
+            "aktion-datum": "22.06.2023 & 23.06.2023",
+            "aktion-aktiv": false
+          }
+        },
+        "a25f569d-a9e7-4070-9d68-c1ffa668a9b3": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Gönn dir einen Platz im Livestream!",
+            "aktion-bild": "shopify://shop_images/WhatsApp_Image_2024-02-08_at_12.58.36.jpg",
+            "aktion-datum": "Beendet!",
+            "aktion-aktiv": false
+          }
+        },
+        "ef1ed427-3dce-44c8-8d0a-5a423ddb89df": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Die Weihnatsshow \"Twitch\" Stream  von MontanaBlack & Gönrgy am 17.12.2023.",
+            "aktion-bild": "shopify://shop_images/Bildschirmfoto_2023-11-29_um_10.27.07.png",
+            "aktion-datum": "Beendet!",
+            "aktion-aktiv": false
+          }
+        },
+        "89ee1863-d116-4e30-9f11-dbde6e0779ae": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Es gibt wieder dicke Preise im Gesamtwert von über 13.000€ zu gewinn!",
+            "aktion-bild": "shopify://shop_images/goenrgy-heidepark.png",
+            "aktion-datum": "Beendet!",
+            "aktion-aktiv": false
+          }
+        },
+        "0cd88999-640d-4919-a875-c3cfebbb9af0": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Mit Monte Lambo Fahren!                               Bitte einsteigen und anschnallen...:)",
+            "aktion-bild": "shopify://shop_images/B0765-311_look.png",
+            "aktion-datum": "Beendet!",
+            "aktion-aktiv": false
+          }
+        },
+        "ec81e3f0-5a1d-4049-988d-b431729a8878": {
+          "type": "block",
+          "settings": {
+            "aktion-titel": "Ticket gewinnen und Monte auf der Gamescom treffen!",
+            "aktion-bild": "shopify://shop_images/eventteaser_9e73e5c7-a6b2-49b4-af0f-c12ce148836e.png",
+            "aktion-datum": "Beendet!!",
+            "aktion-aktiv": false
+          }
+        }
+      },
+      "block_order": [
+        "8417794d-c1a0-47ef-bdf8-6d9d4c4368c5",
+        "30f53369-4d16-4947-9668-05b7b367945c",
+        "a25f569d-a9e7-4070-9d68-c1ffa668a9b3",
+        "ef1ed427-3dce-44c8-8d0a-5a423ddb89df",
+        "89ee1863-d116-4e30-9f11-dbde6e0779ae",
+        "0cd88999-640d-4919-a875-c3cfebbb9af0",
+        "ec81e3f0-5a1d-4049-988d-b431729a8878"
+      ],
+      "settings": {
+        "newsletter-popup-heading": "#GÖNNERSTAG-Newsletter: Lass dich über kommende Aktionen informieren!",
+        "newsletter-popup-text": "",
+        "newsletter-popup-subtext": "Bitte schaue nach dem Absenden in deinem Postfach nach einer Bestätigungsmail – erst nachdem du auf den Link darin geklickt hast, wirst du über kommende Aktionen geupdated."
+      }
+    },
+    "525e44b8-e0b1-4811-a225-02e23a7d2b01": {
+      "type": "goennerstag-slideshow",
+      "blocks": {
+        "template--18554303611208__525e44b8-e0b1-4811-a225-02e23a7d2b01-1682316725483b5435-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/29708518-youtuber-montanablack-monte-beim-joyn-event-the-great-fight-night-in-der-lanxess-arena-2tSAMunS40e9.jpg",
+            "heading": "Vergangene Gönnerstag-Aktion",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--18554303611208__525e44b8-e0b1-4811-a225-02e23a7d2b01-1682316725483b5435-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18554303611208__525e44b8-e0b1-4811-a225-02e23a7d2b01-1682316725483b5435-0",
+        "template--18554303611208__525e44b8-e0b1-4811-a225-02e23a7d2b01-1682316725483b5435-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "infobox_heading": "22.12.2022: NAME DER AKTION",
+        "infobox_paragraph": "Hier wird eine vergangene Gönnerstag-Aktion beschrieben: Was ist passiert, was gab es zu gewinnen, wie konnte man teilnehmen, was waren die Highlights etc.\n\nWe’re different from other energy drinks because we focus on movement.",
+        "infobox_hashtag": "Infobox Hashtag",
+        "showGoennerButton": false,
+        "popup_heading1": "Teilnahme-Popup: Überschrift Schritt 1",
+        "popup_text1": "Teilnahme-Popup: Text Schritt 1",
+        "popup_heading2": "Teilnahme-Popup: Überschrift Schritt 2",
+        "popup_text2": "Teilnahme-Popup: Text Schritt 2",
+        "popup_heading3": "Teilnahme-Popup: Überschrift Schritt 3",
+        "popup_text3": "Teilnahme-Popup: Text Schritt 3",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
     "dc6a9ab4-abbd-4e32-bf76-63a9d209c45e",
     "main",
-    "c3df8059-6bcd-4dad-bb45-f122bdad0a99"
+    "c3df8059-6bcd-4dad-bb45-f122bdad0a99",
+    "b4878c0f-ecd7-4f5c-ad68-6b0beb5a65f2",
+    "ca3557a0-298c-4e2d-b39e-ef4b13b41db9",
+    "525e44b8-e0b1-4811-a225-02e23a7d2b01"
   ]
 }

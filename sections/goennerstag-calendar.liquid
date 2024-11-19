@@ -1,0 +1,251 @@
+<section id="eventCalendar">
+  <div class="page-width">
+    <div class="grid grid--3-col-desktop grid--1-col-tablet-down">
+      {%- for block in section.blocks -%}
+        <div
+          class="grid__item eventItem"
+          class="calendarElement"
+          style="background-image: url({{ block.settings.aktion-bild | img_url: '512x' | src }}"
+        >
+          {% if block.settings['aktion-aktiv'] %}
+            <div class="daysLeft">
+              <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/time-left.png?v=1681485898">
+              <p>Noch <span id="daysLeftNumber"></span> Tage</p>
+            </div>
+          {% else %}
+            <div class="eventNotify">
+              <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436">
+            </div>
+          {% endif %}
+
+          <div class="infoText">{{ block.settings['aktion-titel'] }}</div>
+          <div
+            {% if block.settings['aktion-aktiv'] %}
+              id="activeDate"
+            {% endif %}
+            class="eventDate{% if block.settings.aktion-aktiv %} active{% endif %}"
+          >
+            {{ block.settings['aktion-datum'] }}
+          </div>
+        </div>
+      {%- endfor -%}
+
+      <!--
+        <div class="grid__item eventItem" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/goenrgy-car-blue.jpg?v=1681473359)">
+           <div class="daysLeft"><img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/time-left.png?v=1681485898" /> <p>Noch 42 Tage</p></div>
+            <div class="infoText">2 Wochen Gönrgy-BMW</div>
+          <div class="eventDate active">23.05.2023</div>
+        </div>
+      -->
+      <!--
+        <div class="grid__item eventItem unknown" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/event1_3f837752-a642-4dc2-8c6b-e5bad9cd5a4a.jpg?v=1681655707)">
+           <div class="eventNotify">
+             <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436" />
+           </div>
+           <div class="infoText">???</div>
+           <div class="eventDate">21.07.2023</div>
+         </div>
+          <div class="grid__item eventItem unknown" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/event3_c7228b2e-3ec7-4c02-9a1d-eaf70a4a55d0.jpg?v=1681568316)">
+            <div class="eventNotify">
+               <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436" />
+             </div>
+            <div class="infoText">???</div>
+            <div class="eventDate">21.08.2023</div>
+         </div>
+        <div class="grid__item eventItem unknown" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/event2_445fd978-1991-42a7-bfb1-e6f441148f58.jpg?v=1681568339)">
+          <div class="eventNotify">
+             <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436" />
+           </div>
+          <div class="infoText">???</div>
+          <div class="eventDate">23.05.2023</div>
+         </div>
+         <div class="grid__item eventItem unknown" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/event4_99893f96-05ac-4053-8bfc-363bfcfbea78.jpg?v=1682314366)">
+          <div class="eventNotify">
+             <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436" />
+           </div>
+           <div class="infoText">???</div>
+           <div class="eventDate">21.07.2023</div>
+         </div>
+          <div class="grid__item eventItem unknown" class="calendarElement" style="background-image: url(https://cdn.shopify.com/s/files/1/0651/4271/8696/files/event5_eca57581-ce62-4c86-9166-1ac426cbad47.jpg?v=1682314366)">
+            <div class="eventNotify">
+             <img src="https://cdn.shopify.com/s/files/1/0651/4271/8696/files/notify.png?v=1682595436" />
+           </div>
+            <div class="infoText">???</div>
+            <div class="eventDate">21.08.2023</div>
+         </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<div id="goennerstagNewsletterPopupArea">
+  <div id="goennerstagNewsletterPopup">
+    <div id="closeGoennerstagNewsletterPopup">X</div>
+    <div class="center">
+      <h2>
+        {{ section.settings['newsletter-popup-heading'] }}
+      </h2>
+    </div>
+    <div class="scrollArea center">
+      <p>
+        {{ section.settings['newsletter-popup-text'] }}
+      </p>
+      <div class="grid grid--1-col-desktop grid--1-col-tablet-down">
+        <div class="grid__item">
+          <form
+            method="post"
+            action="/contact#ContactFooter"
+            id="ContactFooter"
+            accept-charset="UTF-8"
+            class="footer__newsletter newsletter-form"
+          >
+            <input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"
+            ><input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="newsletter-form__field-wrapper">
+              <div class="field">
+                <input
+                  id="NewsletterForm--sections--18490476527944__footer"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value=""
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  placeholder="E-Mail"
+                  required=""
+                >
+                <label class="field__label" for="NewsletterForm--sections--18490476527944__footer"> E-Mail </label>
+                <button
+                  type="submit"
+                  class="newsletter-form__button field__button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="Abonnieren"
+                >
+                  <svg
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="icon icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+      <p>
+        {{ section.settings['newsletter-popup-subtext'] }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#closeGoennerstagDescPopup').click(function () {
+      $('#goennerstagDescPopupArea').fadeOut();
+    });
+
+    $('.eventNotify').click(function () {
+      $('#goennerstagNewsletterPopupArea').fadeIn();
+    });
+    $('#closeGoennerstagNewsletterPopup').click(function () {
+      $('#goennerstagNewsletterPopupArea').fadeOut();
+    });
+  });
+
+  /* calculate date */
+
+  dateString = $('#activeDate').text();
+  const d = dateString.slice(0, 2),
+    m = dateString.slice(3, 5) - 1,
+    y = dateString.slice(6, 10);
+
+  const dateObj = new Date(y, m, d);
+  const today = Date();
+  var days = daysdifference(today, dateObj);
+
+  $('#daysLeftNumber').text(days);
+
+  function daysdifference(firstDate, secondDate) {
+    var startDay = new Date(firstDate);
+    var endDay = new Date(secondDate);
+
+    var millisBetween = startDay.getTime() - endDay.getTime();
+    var days = millisBetween / (1000 * 3600 * 24);
+
+    return Math.round(Math.abs(days));
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Gönnerstag-Kalender",
+  "settings": [
+    {
+      "id": "newsletter-popup-heading",
+      "type": "text",
+      "label": "Newsletter Popup Überschrift"
+    },
+    {
+      "id": "newsletter-popup-text",
+      "type": "textarea",
+      "label": "Newsletter Popup Text"
+    },
+    {
+      "id": "newsletter-popup-subtext",
+      "type": "text",
+      "label": "Newsletter Popup Text unter Inputfeld"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Gönnerstag-Aktion",
+      "limit": 9,
+      "settings": [
+        {
+          "id": "aktion-titel",
+          "type": "text",
+          "label": "Titel Aktion"
+        },
+        {
+          "id": "aktion-bild",
+          "type": "image_picker",
+          "label": "Bild Aktion"
+        },
+        {
+          "id": "aktion-datum",
+          "type": "text",
+          "label": "Datum Aktion"
+        },
+        {
+          "type": "checkbox",
+          "id": "aktion-aktiv",
+          "label": "Als aktive Aktion labeln",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gönnerstag-Kalender",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
