@@ -12,148 +12,13 @@
     "681800d1-8f53-403e-b226-8c35d82e67b2": {
       "type": "slideshow",
       "blocks": {
-        "90331afc-a9cd-4426-a0f1-1a13777558df": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/bg-new.png",
-            "image-mobile": "shopify://shop_images/mobile-bg.png",
-            "heading": "Limited Edition #2 Mega Jackpot",
-            "heading_size": "h1",
-            "subheading": "Alle guten Dinge kommen diesmal im Doppelpack! Findet mit uns heraus, welche der beiden Sorten eure Nummer eins wird und gewinne beim Gönrgy Jackpot. Wir verlosen 10 x 10.000.-€",
-            "button_label": "Voten & Gewinnen",
-            "link": "https://voting-goenrgy.de/",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "b8592198-1e29-442c-b75e-886d461e245d": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Arctic_Ice_x4_ae409b20-9796-4b32-99f3-d347cd0f1a10.jpg",
-            "image-mobile": "shopify://shop_images/Arctic_Ice_x4_ae409b20-9796-4b32-99f3-d347cd0f1a10.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://pages/zum-shop",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-2",
-            "text_alignment_mobile": "left"
-          }
-        },
-        "705b7bb7-dbc8-4887-bd9e-7a3c61f1e442": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Kacktus_Frucht_x4_f60529e0-f4f3-4d39-94a8-4d56c8f77172.jpg",
-            "image-mobile": "shopify://shop_images/Kacktus_Frucht_x4_f60529e0-f4f3-4d39-94a8-4d56c8f77172.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://pages/zum-shop",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "left"
-          }
-        },
-        "slide_VyygdR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gonrgy_Juneberry_Jam.jpg",
-            "image-mobile": "shopify://shop_images/Gonrgy_Juneberry_Jam.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_a8htRR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gonrgy_WhitePeach.jpg",
-            "image-mobile": "shopify://shop_images/Gonrgy_WhitePeach.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_qDCVmi": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Bildschirmfoto_2024-02-18_um_10.47.21.png",
-            "image-mobile": "shopify://shop_images/Bildschirmfoto_2024-02-18_um_10.47.21.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "d04e25cf-45f5-4242-a231-7f4d6f12943a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/b1.png",
-            "image-mobile": "shopify://shop_images/b1-mobile_bf4b44a9-4260-47bb-acbd-9dd8b49e77fa.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://pages/zum-shop",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "left"
-          }
-        },
         "template--18490476069192__681800d1-8f53-403e-b226-8c35d82e67b2-16802379624f744667-0": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/first_edition-monte.png",
-            "image-mobile": "shopify://shop_images/slidebild-mobile_d1403375-f650-4799-8fb5-ee524071aab9.png",
             "heading": "G steht für Gönnen.",
             "heading_size": "h1",
-            "subheading": "<strong>Alle guten Dinge sind 3.</strong>           Unsere 3 Geschmacksrichtungen mit 100%iger Geschmacksexplosion. Lasst es euch schmecken!",
+            "subheading": "<strong>Alle guten Dinge sind 3.</strong>           Gönrgy startet durch und das mit 3 Geschmacksrichtungen mit 100%iger Geschmacksexplosion. Lasst es euch schmecken.",
             "button_label": "Zu unseren Partnershops",
             "link": "shopify://pages/zum-shop",
             "button_style_secondary": false,
@@ -164,17 +29,87 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
           }
+        },
+        "d04e25cf-45f5-4242-a231-7f4d6f12943a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/b1.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Zu unseren Partnershops",
+            "link": "shopify://pages/zum-shop",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "b8592198-1e29-442c-b75e-886d461e245d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/r1_ceb0571e-5f7a-4ff8-bd23-8f5c58c13c74.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Zu unseren Partnershops",
+            "link": "shopify://pages/zum-shop",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "705b7bb7-dbc8-4887-bd9e-7a3c61f1e442": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/t1.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Zu unseren Partnershops",
+            "link": "shopify://pages/zum-shop",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "90331afc-a9cd-4426-a0f1-1a13777558df": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/slide2.jpg",
+            "heading": "G steht für Gönnen.",
+            "heading_size": "h1",
+            "subheading": "Stay active and energized all day long with CELSIUS by your side. CELSIUS powers active lives every day with essential, functional energy.",
+            "button_label": "Jetzt gönnen!",
+            "link": "#homeProductOverview",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "90331afc-a9cd-4426-a0f1-1a13777558df",
+        "template--18490476069192__681800d1-8f53-403e-b226-8c35d82e67b2-16802379624f744667-0",
+        "d04e25cf-45f5-4242-a231-7f4d6f12943a",
         "b8592198-1e29-442c-b75e-886d461e245d",
         "705b7bb7-dbc8-4887-bd9e-7a3c61f1e442",
-        "slide_VyygdR",
-        "slide_a8htRR",
-        "slide_qDCVmi",
-        "d04e25cf-45f5-4242-a231-7f4d6f12943a",
-        "template--18490476069192__681800d1-8f53-403e-b226-8c35d82e67b2-16802379624f744667-0"
+        "90331afc-a9cd-4426-a0f1-1a13777558df"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -190,13 +125,13 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Gönn dir: Das köstlich-schmöchtliche Sortiment",
+        "title": "Gönn dir: Das Sortiment",
         "heading_size": "h2",
-        "description": "<p>Seid bereit für den ultimativen Geschmacks-Showdown mit unserem exklusiven Limited Edition #2 Drop! </p><p></p><p>Uuuiii ist das lecker.</p>",
+        "description": "<p>Eiskalt genießen! Der Sommer ist am Start und unsere leckeren Energydrinks auch. Lasst uns wissen welcher euer Favorit wird.</p><p><strong>Uuuiii ist das lecker.</strong></p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "limited-edition-2",
-        "products_to_show": 6,
+        "collection": "all",
+        "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": false,
@@ -207,7 +142,6 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 52,
@@ -228,88 +162,6 @@
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "2fa0cb08-0550-448e-94f4-161b255de7bf": {
-      "type": "product-overview",
-      "blocks": {
-        "c8503eb7-7709-4964-9750-0e2958e3b01a": {
-          "type": "block",
-          "settings": {
-            "benefit": "Vitamin B5  B6 / B12",
-            "benefit-icon": "shopify://shop_images/thunderbolt_1.png"
-          }
-        },
-        "46385d4d-ed7e-40f8-ba90-2bf2e0ed86f7": {
-          "type": "block",
-          "settings": {
-            "benefit": "Natürliches Koffein",
-            "benefit-icon": "shopify://shop_images/thunderbolt_1.png"
-          }
-        },
-        "9c2ceebe-28a7-4c51-9b23-14ca1fd9818a": {
-          "type": "block",
-          "settings": {
-            "benefit": "Grüntee Extrakt",
-            "benefit-icon": "shopify://shop_images/thunderbolt_1.png"
-          }
-        },
-        "6c1d6732-0ac7-4f6c-97df-4f49297d3233": {
-          "type": "block",
-          "settings": {
-            "benefit": "Taurin",
-            "benefit-icon": "shopify://shop_images/metabolism.png"
-          }
-        },
-        "7c0ee7fa-4752-420a-957e-9f83d8bed697": {
-          "type": "block",
-          "settings": {
-            "benefit": "Ginseng",
-            "benefit-icon": "shopify://shop_images/metabolism.png"
-          }
-        },
-        "4c19af1d-5501-40f4-b3a4-4ed07befa1fe": {
-          "type": "block",
-          "settings": {
-            "benefit": "Gingko",
-            "benefit-icon": "shopify://shop_images/metabolism.png"
-          }
-        }
-      },
-      "block_order": [
-        "c8503eb7-7709-4964-9750-0e2958e3b01a",
-        "46385d4d-ed7e-40f8-ba90-2bf2e0ed86f7",
-        "9c2ceebe-28a7-4c51-9b23-14ca1fd9818a",
-        "6c1d6732-0ac7-4f6c-97df-4f49297d3233",
-        "7c0ee7fa-4752-420a-957e-9f83d8bed697",
-        "4c19af1d-5501-40f4-b3a4-4ed07befa1fe"
-      ],
-      "settings": {
-        "producttitle1": "KAKTUS KICK",
-        "productimg1": "shopify://shop_images/kk_mini-navi.png",
-        "productlogo1": "shopify://shop_images/logo-kaktus-kick.png",
-        "productdesc1": "<p><strong>Bleibe den gesamten Tag über aktiv und voller Energie mit Gönrgy. </strong></p><p><br/>Gönrgy sorgt dafür, dass du täglich mit essentieller und funktionaler Energie versorgt wirst. Was uns von anderen Energydrinks unterscheidet, ist unsere Konzentration nicht nur auf die Entwicklung unserer besten Energydrink-Formel, sondern auch auf den besten Geschmack. Wir sind der erste Energydrink, der nie wie ein typischer Energydrink schmeckt. </p><p>Am besten probierst du gleich mal unsere Geschmacksrichtung <strong>KAKTUS KICK</strong> und holst dir den belebenden Gönrgy-Kick.</p><p></p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>",
-        "producttitle2": "BLUEBERRY COCONUT",
-        "productimg2": "shopify://shop_images/cocos_727ce7ab-f169-4e15-a711-af831a29e502.png",
-        "productlogo2": "shopify://shop_images/logo-cocos.png",
-        "productdesc2": "<p><strong>Bleibe den gesamten Tag über aktiv und voller Energie mit Gönrgy. </strong></p><p><br/>Gönrgy sorgt dafür, dass du täglich mit essentieller und funktionaler Energie versorgt wirst. Was uns von anderen Energydrinks unterscheidet, <br/>ist unsere Konzentration nicht nur auf die Entwicklung unserer besten Energydrink-Formel, sondern auch auf den besten Geschmack. Wir sind der erste Energydrink, der nie wie ein typischer Energydrink schmeckt. </p><p>Am besten probierst du gleich mal unsere Geschmacksrichtung <strong>BLUEBERRY COCONUT</strong> und holst dir den belebenden Gönrgy-Kick.</p><p></p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>",
-        "producttitle3": "ARCTIC ICE",
-        "productimg3": "shopify://shop_images/ai-mini-navi.png",
-        "productlogo3": "shopify://shop_images/logo-arctic-ice.png",
-        "productdesc3": "<p><strong>Bleibe den gesamten Tag über aktiv und voller Energie mit Gönrgy. </strong></p><p><br/>Ein absoluter Frischekick, der deine Geschmacksknospen auf Trab bringt. <br/>Die feine Süße von dem Arctic Ice Bonbons verleiht diesem Energy Drink einen unwiderstehlich leckeren Twist. <br/>Ein erfrischender Genuss, der dir den nötigen Boost verpasst, um den Tag zu rocken. <br/>Gönn dir den Geschmack von Energie und erlebe die Geschmacks-Explosion mit Gönrgy!\"<br/></p><p>Am besten probierst du gleich mal unsere Geschmacksrichtung <strong>ARCTIC ICE</strong> und holst dir den belebenden Gönrgy-Kick.</p><p></p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>",
-        "secondWindowText": "<p>Gönrgy dir den Kick!<br/>Unser Energydrink schmeckt nicht nur super, sondern hat auch jede Menge gute Inhaltsstoffe die dir den Gönrgy Kick geben.</p><p></p>",
-        "producttitle4": "JUNEBERRY JAM",
-        "productimg4": "shopify://shop_images/juneberry.png",
-        "productlogo4": "shopify://shop_images/juneberry-logo_8e2c8f40-3f76-447d-b272-134c3b1e4f7a.png",
-        "productdesc4": "<p>Erlebe den ultimativen Energieschub mit unserer exklusiven Geschmacksrichtung Juneberry Jam! Dieser Energy Drink bietet einen erfrischenden Kick, der deine Geschmackssinne belebt. Die delikate Süße saftiger Juneberries verleiht diesem Getränk eine unwiderstehlich leckere Note. Genieße die erfrischende Wirkung, die dir den nötigen Boost gibt, um erfolgreich durch den Tag zu kommen. Probier am besten <br/>gleich unsere Limited Edition Geschmacksrichtung <strong>Juneberry Jam</strong> und erlebe den anregenden Gönrgy-Kick für dich selbst.</p><p>Am besten probierst du gleich mal unsere Geschmacksrichtung </p><p><strong>JUNEBERRY JAM </strong> und holst dir den belebenden Gönrgy-Kick.</p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>",
-        "producttitle5": "SWEET LEMON",
-        "productimg5": "shopify://shop_images/sweet-lemon.png",
-        "productlogo5": "shopify://shop_images/lemon-logo_f116040a-08aa-4a17-8894-04192b0ca27c.png",
-        "productdesc5": "<p>Ready to level up your taste game? Gönrgy's Limited Edition <strong>Sweet Lemon</strong> bringt den Geschmack von frisch gepressten Zitronen direkt in deine Power-Pause! Diese süße und spritzige Kombi ist wie eine Geschmacksbombe für deine Geschmacksknospen. Erfrischend, lecker und genau das Richtige, um deinen Tag aufzumischen. Verpasse nicht die fein süße Erfrischung – Gönrgy Sweet Lemon, der Geschmack, der deine Energie in die Höhe schnellen lässt!\" </p><p>Am besten probierst du gleich mal unsereGeschmacksrichtung </p><p><strong>SWEET LEMON </strong> und holst dir den belebenden Gönrgy-Kick.</p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>",
-        "producttitle6": "WHITE PEACH",
-        "productimg6": "shopify://shop_images/white-peach.png",
-        "productlogo6": "shopify://shop_images/peach-logo_c8d3afa5-1c83-4520-866f-7a86412073aa.png",
-        "productdesc6": "<p>Tauche ein in die erfrischende Welt der Gönrgy Limited Edition mit der verlockenden Geschmacksrichtung <strong>White Peach</strong>! <br/>Ein Geschmackserlebnis, dass dir den Sommer auf die Zunge zaubert. Die süße Eleganz weißer Pfirsiche trifft auf unsere prickelnde Energie. Ein wahres Fest für deine Sinne, das dir den nötigen Frischekick verleiht. <br/>Hol dir jetzt den leckeren Boost mit Gönrgy White Peach und lass dich von der frischen Energie durchströmen – denn Energie war noch nie so lecker!\"</p><p>Am besten probierst du gleich mal unsere Geschmacksrichtung <strong>WHITE PEACH </strong> und holst dir den belebenden Gönrgy-Kick.</p><ul><li><strong>Kalorienfrei</strong></li><li><strong>Geschmacksexplosionsformel by MontanaBlack</strong></li></ul>"
       }
     },
     "32f08db4-0e66-4b38-8050-a94154435f21": {
@@ -376,6 +228,7 @@
         "b80a248d-c634-45f1-89f7-ef997092c0de",
         "a30a6c6c-a2b1-4dbf-92ce-3b1b5848b106"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -384,19 +237,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "1c34c651-5fb6-4a9b-a20b-cc934a34be6a": {
-      "type": "curatorfeed",
-      "settings": {}
     }
   },
   "order": [
     "681800d1-8f53-403e-b226-8c35d82e67b2",
     "featured-collection",
     "1bf6fe32-f334-47ce-9531-c05aa6a79f69",
-    "2fa0cb08-0550-448e-94f4-161b255de7bf",
     "32f08db4-0e66-4b38-8050-a94154435f21",
-    "96d83e91-6fa0-45d5-8372-596489aa9367",
-    "1c34c651-5fb6-4a9b-a20b-cc934a34be6a"
+    "96d83e91-6fa0-45d5-8372-596489aa9367"
   ]
 }
